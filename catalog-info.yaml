@@ -11,7 +11,7 @@ metadata:
     - tanzu
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
-		'backstage.io/source-location': 'url:https://github.com/tanzu-end-to-end/spring-sensors'
+    'backstage.io/source-location': 'url:https://github.com/tanzu-end-to-end/spring-sensors/'
 spec:
   type: service
   lifecycle: experimental
