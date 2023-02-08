@@ -1,5 +1,5 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
 metadata:
   name: spring-sensors
   description: Spring Sensors Demo
@@ -13,6 +13,9 @@ metadata:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
     'backstage.io/source-location': 'url:https://github.com/tanzu-end-to-end/spring-sensors/'
 spec:
+  git: https://github.com/tanzu-end-to-end/spring-sensors.git
+    ref:
+      branch: master
   type: service
   lifecycle: experimental
   owner: tracyde
